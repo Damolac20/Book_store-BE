@@ -7,10 +7,12 @@ import logging
 import os
 import sentry_sdk
 from sentry_sdk.integrations.flask import FlaskIntegration
+from flask_cors import CORS
 
 
 def create_app():
     app = Flask(__name__)
+    CORS(app)
 
     sentry_sdk.init(
         dsn="https://d1c582eb647a15d6ab18ebe6ed6613e2@o4509763108536320.ingest.us.sentry.io/4509763112730624",

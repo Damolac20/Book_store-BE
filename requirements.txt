@@ -7,6 +7,7 @@ cloudinary==1.44.1
 dot==0.3.0
 env==0.1.0
 Flask==3.1.1
+flask-cors==6.0.1
 Flask-JWT-Extended==4.7.1
 Flask-Migrate==4.1.0
 Flask-RESTful==0.3.10
